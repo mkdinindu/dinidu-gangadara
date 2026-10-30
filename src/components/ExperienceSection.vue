@@ -46,13 +46,13 @@
 <style scoped>
 .experience {
   padding: 100px 0;
-  padding-left: 72px;
+  padding-left: var(--nav-w);
   border-top: 1px solid var(--border);
 }
 
 .experience-wrap {
-  padding: 0 80px;
-  max-width: 1100px;
+  padding: 0 var(--inset);
+  max-width: var(--content-max);
 }
 
 .section-heading {
@@ -107,6 +107,7 @@
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 14px;
+  max-width: var(--measure);
 }
 
 @media (max-width: 900px) {

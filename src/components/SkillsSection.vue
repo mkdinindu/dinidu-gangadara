@@ -35,13 +35,13 @@ const columns = [
 <style scoped>
 .skills {
   padding: 100px 0;
-  padding-left: 72px;
+  padding-left: var(--nav-w);
   border-top: 1px solid var(--border);
 }
 
 .skills-wrap {
-  padding: 0 80px;
-  max-width: 1240px;
+  padding: 0 var(--inset);
+  max-width: var(--content-max);
 }
 
 .section-heading {
