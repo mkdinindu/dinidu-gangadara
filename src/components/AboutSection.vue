@@ -66,12 +66,12 @@ import embeddedImg from '../assets/embededSystems.jpg'
 <style scoped>
 .about {
   padding: 120px 0 80px;
-  padding-left: 72px;
+  padding-left: var(--nav-w);
 }
 
 .about-wrap {
-  padding: 0 80px;
-  max-width: 1240px;
+  padding: 0 var(--inset);
+  max-width: var(--content-max);
 }
 
 .about-heading {
@@ -96,6 +96,7 @@ import embeddedImg from '../assets/embededSystems.jpg'
   line-height: 1.85;
   color: var(--text);
   margin-bottom: 20px;
+  max-width: var(--measure);
 }
 
 .about-prose p:first-child {

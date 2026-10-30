@@ -12,6 +12,13 @@
   --border-light: #3f3f46;
   --sans: 'DM Sans', system-ui, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+
+  /* Layout: left-anchored column with a capped gutter */
+  --nav-w: 72px;
+  --inset: clamp(48px, 7vw, 128px);
+  --content-max: clamp(1120px, 86vw, 1600px);
+  /* Comfortable line length for body copy (~70 characters) */
+  --measure: 48ch;
 }
 
 *, *::before, *::after {
@@ -52,5 +59,5 @@ a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 
 @media (max-width: 900px) {
-  :root { --sidebar-w: 0px; }
+  :root { --inset: 24px; }
 }
