@@ -39,7 +39,7 @@ const year = new Date().getFullYear()
 <style scoped>
 .contact {
   padding: 100px 0 0;
-  padding-left: 72px;
+  padding-left: var(--nav-w);
   border-top: 1px solid var(--border);
   display: flex;
   flex-direction: column;
@@ -47,8 +47,8 @@ const year = new Date().getFullYear()
 }
 
 .contact-wrap {
-  padding: 0 80px;
-  max-width: 1000px;
+  padding: 0 var(--inset);
+  max-width: var(--content-max);
   flex: 1;
 }
 
@@ -67,6 +67,7 @@ const year = new Date().getFullYear()
   line-height: 1.85;
   color: var(--text);
   margin-bottom: 48px;
+  max-width: var(--measure);
 }
 
 .contact-links {
@@ -114,7 +115,7 @@ const year = new Date().getFullYear()
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 28px 80px;
+  padding: 28px var(--inset);
   border-top: 1px solid var(--border);
   font-family: var(--mono);
   font-size: 12px;

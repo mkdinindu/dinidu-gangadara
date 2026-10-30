@@ -40,8 +40,8 @@ function scroll(id) {
   min-height: 100vh;
   display: flex;
   align-items: flex-end;
-  padding: 80px 80px 100px;
-  padding-left: calc(72px + 80px);
+  padding: 80px var(--inset) 100px;
+  padding-left: calc(var(--nav-w) + var(--inset));
   overflow: hidden;
 }
 
